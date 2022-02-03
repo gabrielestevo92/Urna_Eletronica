@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Eletronica</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="urna">
+        <div class="tela">
+            <div class="d-1">
+                <div class="d-1-left">
+                    <div class="d-1-1">
+                        <span>SEU VOTO PARA</span>
+                    </div>
+                    <div class="d-1-2">
+                        <span>PRESIDENTE</span>
+                    </div>
+                    <div class="d-1-3">
+                        <div class="numero pisca" id="primeiro-numero"></div>
+                        <div class="numero" id="segundo-numero"></div>
+                    </div>
+                    <div id="infoCandidato" class="d-1-4">
+                        Nome: <span id="nome"></span> <br/>
+                        PARTIDO: <span id="partido"></span><br/>
+                        VICE-PRESIDENTE: <span id="vice"></span>
+                    </div>
+                </div>
+                <div class="d-1-right">
+                    <div class="foto">
+                        <img id="candidato" class="candidato" src=""/>
+                        
+                    </div>
+                    <div class="d-1-right-low">
+                        <div>Presidente</div>
+                        <div>Vice-Prefeito</div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-2">
+                Aperte a tela:<br/>
+                CONFIRMA para CONFIRMAR este voto<br/>
+                CORRIGE para REINICIAR este voto
+            </div>
+        </div>
+        <div class="teclado">
+            <div class="teclado--linha">
+                <div class="teclado--botao" onclick="digito(1)">1</div>
+                <div class="teclado--botao" onclick="digito(2)">2</div>
+                <div class="teclado--botao" onclick="digito(3)">3</div>                
+            </div>
+            <div class="teclado--linha">
+                <div class="teclado--botao" onclick="digito(4)">4</div>
+                <div class="teclado--botao" onclick="digito(5)">5</div>
+                <div class="teclado--botao" onclick="digito(6)">6</div>                
+            </div>
+            <div class="teclado--linha">
+                <div class="teclado--botao" onclick="digito(7)">7</div>
+                <div class="teclado--botao" onclick="digito(8)">8</div>
+                <div class="teclado--botao" onclick="digito(9)">9</div>                
+            </div>
+            <div class="teclado--linha">
+                <div class="teclado--botao" onclick="digito(0)">0</div>       
+            </div>
+            <div class="teclado--linha">
+                <div class="teclado--botao botao--branco">BRANCO</div>
+                <div class="teclado--botao botao--corrige" onclick="digito('limpar')">CORRIGE</div>
+                <div class="teclado--botao botao--confirma" onclick="teste('candidato_17')">CONFIRMA</div>                
+            </div>
+            
+            <h2 id="teste"></h2>
+        </div>
+    </div>
+</body>
+</html>
